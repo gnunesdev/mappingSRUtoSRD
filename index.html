@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mapeamento</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    button {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  
+  <h3>Mapeamento SRU para SRD</h3>
+  <div class="container">
+    <strong>Ponto no sistema SRU</strong>
+    <label for="SRUcoordinateX">
+      coordenada x:
+      <input type="text" id="SRUcoordinateX">
+    </label>
+    <label for="SRUcoordinateY">
+      coordenada y:
+      <input type="text" id="SRUcoordinateY">
+    </label>
+  </div>
+  <button id="convertBtn">CONVERTER</button>
+  <div class="container">
+    <strong>Ponto no sistema SRD</strong>
+      <div>
+        coordenada x:
+        <strong id="SRDcoordinateX"></strong>
+      </div>
+      <div>
+        coordenada y:
+        <strong id="SRDcoordinateY"></strong>
+      </div>
+  </div>
+  <button id="clearBtn">LIMPAR</button>
+
+  <script src="./index.js"></script>
+</body>
+</html>
