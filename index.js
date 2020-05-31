@@ -19,8 +19,8 @@ function mappingSRUtoSRD () {
   const SRUcoordX = document.getElementById("SRUcoordinateX").value;
   const SRUcoordY = document.getElementById("SRUcoordinateY").value;
   
-  const SRDcoordX = (SRUcoordX * 1024)/10;
-  const SRDcoordY = ((SRUcoordY * -768)/8) + 768;
+  const SRDcoordX = (SRUcoordX * SRDmaxX)/SRUmaxX;
+  const SRDcoordY = ((SRUcoordY * -SRDmaxY)/SRUmaxY) + SRDmaxY;
   
   document.getElementById("SRDcoordinateX").innerText = SRDcoordX;
   document.getElementById("SRDcoordinateY").innerText = SRDcoordY;  
